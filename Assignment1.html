@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-color:rgb(252, 250, 250); 
+        }
+        form{
+            background-color: rgb(215, 225, 233);
+            max-width: 500px;
+            height: auto;
+            margin: auto;
+            padding: 30px 20px;
+
+        }
+        .control{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .control label{
+            font-size:small;
+            font-family: Verdana;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .control input{
+            border: 1px solid rgb(255, 252, 252);
+            font-family: inherit;
+            border-radius: 2%;
+            display: block;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .control textarea{
+            border: 1px solid rgb(255, 252, 252);
+            font-family: inherit;
+            display: block;
+            padding: 5px;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    
+
+        .image{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .image label{
+            font-size:small;
+            font-family: Verdana;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .image button{
+            font-size:small;
+            color: blue;
+            border-color: rgb(25, 71, 169);
+           
+            font-family: Verdana;
+            margin-left: 190px;
+            margin-right: 1000px;
+            display: flex;
+            margin-top: 6%;
+            margin-bottom: 9%;
+            border-radius: 25px;
+            
+        }
+        
+        .buttons{
+            display: flex;
+            justify-content: center;
+           
+
+        }
+        .blue1{
+            background-color:rgb(25, 71, 169);
+            color: cornsilk;
+            border-width:0cm;
+            border-color: rgb(25, 71, 169);
+             margin-right: 20px;
+             border-radius: 25px;
+        }
+
+        
+    </style>
+</head>
+
+
+<script>
+    function thisFileUpload() {
+            document.getElementById("file").click();
+        };
+</script>
+
+
+<body>
+    <form id = "form">
+        <div class = "control">
+            <label for="pname">PRODUCT NAME</label>
+            <input type="text" id="pname" />
+        </div>
+        <div class = "control">
+            <label for="measurement">USE OF MEASUREMENT</label>
+            <input type="text" id="measurement" />
+        </div>
+        <div class = "control">
+            <label for="price">PRICE</label>
+            <input type="text" id="price" />
+        </div>
+        <div class = "image">
+            <label for="pimage">PRODUCT IMAGE</label>
+            <button id="button" name="button" value="Upload" onclick="thisFileUpload();">Upload_File</button>
+        </div>
+        <div class = "control">
+            <label for="pdescription">PRODUCT DESCRIPTION</label>
+            <textarea name="DESCRIPTION" id="DESCRIPTION" ></textarea>
+        </div>
+        <div class="buttons">
+
+            <button name="submit" class="blue1" type="submit" value="Save" onclick="myFunction()">Save</button>
+            <button name="submit" class="blue1" type="submit" value="Reset" onclick="myFunction2()">Reset</button>
+            <p id="saved"></p>
+    
+            </div>
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>
